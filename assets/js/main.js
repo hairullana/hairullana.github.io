@@ -126,9 +126,11 @@
 	// get work period
 	const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 	let work_periods = $('.work-period');
+	let last_year_works = $('.last-year-work');
 
 	for (i=0; i<work_periods.length; i++) {
 		let work_period = work_periods[i];
+		let last_year_work = last_year_works[i];
 		let period = $(work_period).html();
 		let [start, end] = period.split(' - ');
 
@@ -162,6 +164,8 @@
 			fix_month = total_month_diff;
 			work_period.append(` (${fix_month} month${fix_month != 1 ? 's' : ''})`);
 		}
+
+		console.log($(last_year_work).html(end_year));
 	};
 
 })(jQuery);
