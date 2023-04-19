@@ -101,14 +101,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background-color: #404258;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #6f7386 15%, #404258 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #6f7386 15%, #404258 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #6f7386 15%, #404258 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #6f7386 15%, #404258 85%);
-	}
-
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -123,7 +115,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #29282c;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
