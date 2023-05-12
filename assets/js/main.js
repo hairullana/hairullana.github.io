@@ -155,7 +155,7 @@
 
 		let fix_year, fix_month;
 		if (total_month_diff >= 12) {
-			fix_year = Math.ceil(total_month_diff / 12);
+			fix_year = Math.floor(total_month_diff / 12);
 			fix_month = total_month_diff % 12;
 
 			if (fix_month > 0) work_period.append(` (${fix_year} year${fix_year != 1 ? 's' : ''} ${fix_month} month${fix_month != 1 ? 's' : ''})`);
@@ -164,8 +164,6 @@
 			fix_month = total_month_diff;
 			work_period.append(` (${fix_month} month${fix_month != 1 ? 's' : ''})`);
 		}
-
-		console.log($(last_year_work).html(end_year));
 	};
 
 })(jQuery);
